@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+}
+
+.card {
+    width: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+.left {
+    width: 60%;
+    background-color: #ffd400;
+    padding: 60px;
+    position: relative;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 60px;
+
+}
+
+.title {
+    letter-spacing: 8px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.left h1 {
+    font-size: 120px;
+    line-height: 1;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.left p {
+    width: 500px;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #222;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.line {
+    width: 60px;
+    height: 4px;
+    background-color: black;
+}
+
+.right {
+    width: 40%;
+    position: relative;
+    background-color: #f8efd1;
+    overflow: visible;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
+.pokemonball {
+    position: absolute;
+    width: 200px;
+    opacity: 0.09;
+    bottom: -60px;
+}
+
+.pikachu {
+    position: absolute;
+    width: 100%;
+    left: -40%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.menu span {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: black;
+    margin: 7px 0;
+    border-radius: 20px;
+}
+
+.dot {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.dot div {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #e5bd00;
+}
+
+#active {
+    background-color: black;
+}
